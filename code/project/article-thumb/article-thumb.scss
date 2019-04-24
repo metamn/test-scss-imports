@@ -1,2 +1,10 @@
 @mixin article-thumb {
+  @include border(normal, all);
+
+  padding: $lem;
+  margin: $lem;
+
+  .article__title {
+    @include article-title--thumb;
+  }
 }

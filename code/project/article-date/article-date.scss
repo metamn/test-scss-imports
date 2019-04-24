@@ -1,1 +1,3 @@
-@mixin article-date {}
+@mixin article-date {
+  @include text-style(figcaption);
+}

@@ -1,0 +1,5 @@
+@mixin article-title--thumb {
+  .link {
+    @include text-style(metamn);
+  }
+}

@@ -1,1 +1,3 @@
-@mixin article-categories {}
+@mixin article-categories {
+  @include text-style(name);
+}

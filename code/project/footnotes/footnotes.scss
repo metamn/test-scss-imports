@@ -1,0 +1,16 @@
+@mixin footnotes {
+  flex-basis: 100%;
+
+  @include footnotes--border;
+  @include text-style(article-body-text);
+
+  h3 {
+    display: flex;
+    flex-direction: column;
+    @include word-wrap;
+  }
+
+  .footnote {
+    @include footnote;
+  }
+}

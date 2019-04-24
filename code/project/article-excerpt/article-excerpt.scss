@@ -1,1 +1,3 @@
-@mixin article-excerpt {}
+@mixin article-excerpt {
+  @include text-style(article-body-text);
+}

@@ -1,5 +1,5 @@
 @mixin border($type: normal, $position: bottom) {
-   @if ($type == normal) {
+  @if ($type == normal) {
     @include border--normal($position);
   }
 

@@ -1,0 +1,6 @@
+@mixin footnote--mobile {
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

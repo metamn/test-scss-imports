@@ -1,0 +1,12 @@
+@mixin footnote__go-back {
+  .link {
+    display: flex;
+    @include link-linethrough;
+
+    .arrow-with-triangle {
+      @include arrow-with-triangle($size: $lem * 2);
+    }
+  }
+
+  @include footnote__go-back--mobile;
+}

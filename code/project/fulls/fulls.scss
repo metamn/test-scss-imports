@@ -3,5 +3,6 @@
 
   .article {
     @include article;
+    @include article-full;
   }
 }

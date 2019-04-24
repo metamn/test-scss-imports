@@ -1,1 +1,3 @@
-@mixin article-footnotes {}
+@mixin article-footnotes {
+  @include footnotes;
+}

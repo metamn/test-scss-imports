@@ -1,0 +1,14 @@
+@mixin footnotes--border {
+  @include border(normal, top);
+  margin-top: $lem * 2;
+
+  @include portrait {
+    @include border(normal, bottom);
+    padding-bottom: $lem * 2;
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+    margin-bottom: $lem * 2;
+  }
+}

@@ -1,0 +1,6 @@
+@mixin footnote__go-back--mobile {
+  @include mobile {
+    margin-top: $lem / 2;
+    @include scale(small-1);
+  }
+}

@@ -1,0 +1,50 @@
+@mixin table {
+  table {
+    margin: $lem 0;
+    width: 100%;
+    overflow-x: auto;
+
+    @include mobile {
+      @include scale(small-1);
+    }
+
+    caption,
+    caption .text,
+    th,
+    td {
+      text-align: left;
+    }
+
+    caption .text,
+    th,
+    td {
+      padding: $lem / 2;
+    }
+
+    caption .text {
+      @include text-style(name);
+      padding: $lem / 4;
+    }
+
+    thead,
+    tbody,
+    tfoot {
+      @include border(normal, all);
+    }
+
+    thead + tbody,
+    tbody + tfoot {
+      border-top: none;
+    }
+
+    tbody {
+      tr {
+        @include border(normal, bottom);
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

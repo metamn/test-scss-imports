@@ -1,0 +1,14 @@
+{
+  "resize": "false",
+  "optimize": "true",
+  "sizes": [
+    {
+      "name": "mobile",
+      "width": "384"
+    },
+    {
+      "name": "tablet",
+      "width": "607"
+    }
+  ]
+}

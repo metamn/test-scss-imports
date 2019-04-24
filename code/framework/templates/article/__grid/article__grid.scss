@@ -1,0 +1,22 @@
+@mixin article__grid {
+  display: flex;
+  flex-direction: column;
+
+  // min full height
+  min-height: 100vh;
+  justify-content: space-around;
+
+  // For the blockquote skew
+  overflow-x: hidden;
+
+  .article {
+    // For the blockquote skew
+    overflow-x: hidden;
+
+    // reset padding, add margin instead
+    @include landscape {
+      margin: 5vh 10vw;
+      padding: 0;
+    }
+  }
+}

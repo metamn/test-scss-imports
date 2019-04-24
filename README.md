@@ -37,3 +37,14 @@ cs@cs-swift:~/work/test-scss-imports$ ls -alh production/assets/styles/site.min.
 cs@cs-swift:~/work/test-scss-imports$ ls -alh production/assets/styles/site.min.css
 -rw-r--r-- 1 cs cs 63K Apr 24 17:23 production/assets/styles/site.min.css
 ```
+
+3. Article template
+
+- Added code/pages/delivering-the-message
+- And the corresponing template: code/framework/templates/article
+- CSS file size: 90K
+
+```
+cs@cs-swift:~/work/test-scss-imports$ ls -alh production/assets/styles/site.min.css
+-rw-r--r-- 1 cs cs 90K Apr 24 18:40 production/assets/styles/site.min.css
+```

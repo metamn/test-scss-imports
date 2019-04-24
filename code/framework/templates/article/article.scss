@@ -1,0 +1,18 @@
+// The default article template
+//
+//
+// Styleguide article-template
+
+@import "../../../project/article/article.scss";
+@import "../../../project/article-full/article-full.scss";
+
+html {
+  &.template-article {
+    body {
+      .article {
+        @include article;
+        @include article-full;
+      }
+    }
+  }
+}

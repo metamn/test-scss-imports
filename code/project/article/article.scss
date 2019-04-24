@@ -1,0 +1,25 @@
+@mixin article {
+  .article__title {
+    @include article-title;
+  }
+
+  .article__date {
+    @include article-date;
+  }
+
+  .article__categories {
+    @include article-categories;
+  }
+
+  .article__excerpt {
+    @include article-excerpt;
+  }
+
+  .article__content {
+    @include article-content;
+  }
+
+  .article__footnotes {
+    @include article-footnotes;
+  }
+}

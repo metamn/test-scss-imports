@@ -1,0 +1,7 @@
+@mixin fulls {
+  @include grid(1, 0px, $lem);
+
+  .article {
+    @include article;
+  }
+}

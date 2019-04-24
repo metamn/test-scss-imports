@@ -6,6 +6,13 @@
 html {
   &.home {
     body {
+      .thumbs {
+        @include thumbs;
+      }
+
+      .fulls {
+        @include fulls;
+      }
     }
   }
 }

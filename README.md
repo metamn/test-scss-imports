@@ -58,3 +58,12 @@ cs@cs-swift:~/work/test-scss-imports$ ls -alh production/assets/styles/site.min.
 cs@cs-swift:~/work/test-scss-imports$ ls -alh production/assets/styles/site.min.css
 -rw-r--r-- 1 cs cs 148K Apr 24 18:46 production/assets/styles/site.min.css
 ```
+
+5. Removing minification:
+
+- CSS file size: 199K
+
+```
+cs@cs-swift:~/work/test-scss-imports$ ls -alh production/assets/styles/site.min.css
+-rw-r--r-- 1 cs cs 199K Apr 24 18:58 production/assets/styles/site.min.css
+```

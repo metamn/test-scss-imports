@@ -1,5 +1,57 @@
 # Testing SCSS Imports
 
+It seems the SASS compiler is not the most efficient.
+The compiled CSS file size is growing exponentially.
+
+## Imports
+
+No matter if you have a global / globbing / one time import of all mixins, or, you import them in individual files like in React.
+
+Data:
+
+- global imports CSS file size: 199K https://github.com/metamn/test-scss-imports
+- local imports CSS file size: 467K https://github.com/metamn/test-scss-imports-local
+- with minification, both CSS file sizes: 148K
+
+## Growth / Size
+
+SASS ads the same amount of code over and over again to the final CSS file without any optimization.
+
+Data:
+
+- Initial state (just framework): 12K
+- Homepage (article index) added, 13 article specific mixins added: 63K
+- Single article page added, no specific mixins added, just the existing 13 article specific mixins: 90K
+- Single page + Homepage, no specific mixins added, just the existing 13 article specific mixins: 148K
+
+The same 13 article specific mixins are added all over again to the final CSS file. Like:
+
+```SCSS
+.home {
+	@include 13mixins; // 63K
+}
+
+.single-article {
+	@include 13mixins; // 90K
+}
+
+.single-article .article-list {
+	@include 13mixins; // 140K
+}
+```
+
+Instead we should have something like:
+
+```SCSS
+.home,
+.single-article,
+.single-article .article-list {
+	@include 1313mixins; // 30K added once
+}
+```
+
+This problem was documented elsewhere too. It seems it is a global, SASS specific problem.
+
 ## Defaults
 
 Global SCSS imports with globbing:

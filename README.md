@@ -55,7 +55,9 @@ Instead we should have something like:
 
 This problem was documented elsewhere too. It seems it is a global, SASS specific problem.
 
-## Defaults
+## Measurements
+
+### Defaults
 
 Global SCSS imports with globbing:
 
@@ -69,9 +71,9 @@ Global SCSS imports with globbing:
 @import 'pages/**/*.scss';
 ```
 
-## CSS file size
+### CSS file size
 
-1. Barebones
+#### 1. Barebones
 
 - empty `project/`
 - `pages/home` has just a "Test" inside
@@ -82,7 +84,7 @@ cs@cs-swift:~/work/test-scss-imports$ ls -alh production/assets/styles/site.min.
 -rw-r--r-- 1 cs cs 12K Apr 24 16:33 production/assets/styles/site.min.css
 ```
 
-2. Articles added and styled
+#### 2. Articles added and styled
 
 - `project` has 13 mixins
 - `pages/home` has 3 thumbs and 3 full articles
@@ -93,7 +95,7 @@ cs@cs-swift:~/work/test-scss-imports$ ls -alh production/assets/styles/site.min.
 -rw-r--r-- 1 cs cs 63K Apr 24 17:23 production/assets/styles/site.min.css
 ```
 
-3. Article template
+#### 3. Article template
 
 - Added code/pages/delivering-the-message
 - And the corresponing template: code/framework/templates/article
@@ -104,7 +106,7 @@ cs@cs-swift:~/work/test-scss-imports$ ls -alh production/assets/styles/site.min.
 -rw-r--r-- 1 cs cs 90K Apr 24 18:40 production/assets/styles/site.min.css
 ```
 
-4. Article template + homepage content
+#### 4. Article template + homepage content
 
 - Homepage content and styling added to Article template
 - CSS file size: 148K
@@ -114,7 +116,7 @@ cs@cs-swift:~/work/test-scss-imports$ ls -alh production/assets/styles/site.min.
 -rw-r--r-- 1 cs cs 148K Apr 24 18:46 production/assets/styles/site.min.css
 ```
 
-5. Removing minification:
+#### 5. Removing minification:
 
 - CSS file size: 199K
 
